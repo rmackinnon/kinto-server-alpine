@@ -1,0 +1,11 @@
+version: '3'
+services:
+  kinto-server-dev:
+    build: .
+    ports:
+     - "8888"
+  kinto-server:
+    build: .
+    image: "kinto-server:alpine-node-9.1.2"
+    ports:
+     - "8888"
